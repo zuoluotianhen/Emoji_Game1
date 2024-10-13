@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PixelFont';
+  src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
+
+body {
+  font-family: 'PixelFont', sans-serif;
+  image-rendering: pixelated;
+}
+
+.pixel-border {
+  box-shadow: 
+    0 -4px 0 4px #000,
+    0 4px 0 4px #000,
+    -4px 0 0 4px #000,
+    4px 0 0 4px #000;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
